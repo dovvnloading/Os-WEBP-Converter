@@ -1,5 +1,4 @@
-
-# Graphite - Grafix Conversion
+# Os-WEBP Converter
 
 ![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -7,104 +6,93 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-Graphite is a sleek, monochromatic, web-based image processing tool designed with a modern neumorphic user interface. It streamlines the workflow of converting WEBP images into widely supported formats (PNG, JPG) while providing client-side upscaling capabilities via high-quality canvas scaling.
-
-Graphite is built on a zero-dependency architecture using native ES Modules and React 19, requiring no bundlers or build steps.
+Os-WEBP Converter is a lightweight, privacy-focused web application designed to convert WEBP images into universally supported formats (PNG, JPG) directly in the browser. Built with a stunning neumorphic (soft UI) design, it offers a tactile user experience without relying on external servers or complex build processes.
 
 ## Key Features
 
 ### Format Conversion
-Instantly convert .webp files to standard .png or .jpeg formats. The conversion engine handles transparency and compression automatically based on the selected output format.
+Seamlessly convert .webp files to .png or .jpeg formats. The engine handles format transitions efficiently while maintaining visual fidelity suitable for production use.
 
 ### Smart Upscaling
-Increase image resolution directly within the browser. The tool offers selectable magnification levels (1.0x, 1.5x, 2.0x) utilizing HTML5 Canvas scaling algorithms to maintain clarity during resizing.
+Enhance image resolution using built-in canvas scaling options. Users can select magnification levels (1.0x, 1.5x, 2.0x) to upscale assets cleanly during the conversion process.
 
-### Neumorphic Design System
-The user interface implements a "Soft UI" aesthetic. It utilizes Tailwind CSS to mimic physical objects through realistic light and shadow rendering, creating a tactile and cohesive user experience.
+### Neumorphic Design
+The interface features a modern, monochromatic aesthetic using soft shadows and highlights to mimic physical depth. This design language provides a clean, distraction-free environment for image processing.
 
-### Privacy-First Architecture
-Graphite operates entirely on the client side. All image processing occurs within the user's browser memory using the HTML5 Canvas API. No images are ever uploaded to external servers, ensuring 100% data privacy, security, and zero network latency.
+### 100% Client-Side Processing
+All processing is performed locally using the HTML5 Canvas API. No data leaves the device, ensuring absolute privacy and zero latency.
 
-### Real-time Visualization
-The interface provides a dual-pane preview system, allowing users to view the original source media side-by-side with the transformed output before committing to a download.
+### Instant Preview
+The application provides a real-time side-by-side comparison, allowing users to verify the input and the converted output before downloading.
 
 ## Technology Stack
 
-* **Frontend Framework:** React 19 (utilized via ES Modules/Import Map)
-* **Styling:** Tailwind CSS (served via CDN)
+* **Frontend:** React 19 (delivered via CDN & Import Maps)
+* **Styling:** Tailwind CSS
 * **Language:** TypeScript
-* **Build Tooling:** None (Native Browser ES Modules)
-* **Storage:** Local Browser Memory
+* **Architecture:** Zero-build setup using native ES Modules
 
 ## Project Structure
 
 ```text
 /
-├── index.html           # Application entry point; handles Import Maps and CDN links
-├── index.tsx            # React Root mounting configuration
-├── App.tsx              # Main application logic, state management, and UI layout
-├── types.ts             # Shared TypeScript interface definitions
-├── metadata.json        # Application metadata configurations
+├── index.html           # Application entry point & Import Map configuration
+├── index.tsx            # React root mount
+├── App.tsx              # Core application logic & UI components
+├── types.ts             # Type definitions
+├── metadata.json        # Project metadata
 └── components/
-    └── icons.tsx        # Scalable Vector Graphics (SVG) component library
+    └── icons.tsx        # SVG UI icons
 ````
 
-## Installation and Deployment
-
-Because Graphite uses React 19 via Import Maps and native ES Modules, it does not require `npm install` for a build process. However, it must be served over HTTP/HTTPS to avoid Cross-Origin Resource Sharing (CORS) issues associated with the `file://` protocol.
+## Installation and Usage
 
 ### Prerequisites
 
-  * A modern web browser (Chrome, Edge, Firefox, Safari)
-  * A local static file server
+Because Os-WEBP Converter uses modern web standards (ES Modules and Import Maps), it requires a static file server to run locally. It does not use bundlers like Webpack or Vite.
 
-### Launching Locally
+### Launch Instructions
 
-1.  **Clone the repository:**
+1.  **Clone and Enter Directory:**
 
     ```bash
-    git clone [https://github.com/your-username/graphite.git](https://github.com/your-username/graphite.git)
-    cd graphite
+    git clone [https://github.com/your-username/os-webp-converter.git](https://github.com/your-username/os-webp-converter.git)
+    cd os-webp-converter
     ```
 
-2.  **Serve the directory:**
+2.  **Start a Static Server:**
     You may use any static server. Examples:
 
-      * **Using npx (Node.js):**
-
+      * **Node (npx):**
         ```bash
         npx serve .
         ```
-
-      * **Using Python:**
-
+      * **Python:**
         ```bash
         python3 -m http.server
         ```
 
-3.  **Access the application:**
-    Open your browser and navigate to the address provided by your terminal (usually `http://localhost:3000` or `http://localhost:8000`).
+3.  **Open Application:**
+    Navigate to the localhost URL provided (e.g., `http://localhost:3000`).
 
-## Usage Guide
+### Operational Guide
 
-1.  **Upload Image:** Click the "Select WEBP Image" button—styled as a raised element on the interface—to open the file picker. Select a valid `.webp` file from your device.
-2.  **Configure Output:**
-      * **Format:** Toggle between PNG or JPEG output.
-      * **Upscale:** Select the desired magnification factor (1x, 1.5x, or 2x).
-3.  **Process:** Click the "Convert Image" button. The application will render the new image in the "Converted" preview pane.
-4.  **Save:** Click "Download Converted Image" to write the processed file to your local disk.
+1.  **Upload:** Click the raised "Select WEBP Image" button to choose a file from your device.
+2.  **Configure:**
+      * **Format:** Toggle between PNG or JPG.
+      * **Upscale:** Select the magnification level (1x, 1.5x, 2x).
+3.  **Convert:** Press "Convert Image" to process the file in the browser memory.
+4.  **Save:** Click "Download Converted Image" to save the result to your disk.
 
-## Browser Compatibility
+## Browser Requirements
 
-This project relies on **Import Maps** and native **ES Modules**. It is compatible with the latest versions of all major browsers:
+This application leverages modern web standards, specifically **ES Modules** and **Import Maps**, to run without a build step. Please use the latest version of:
 
-  * Google Chrome (89+)
-  * Mozilla Firefox (108+)
-  * Microsoft Edge (89+)
-  * Safari (16.4+)
-
-*Note: Legacy browsers (such as Internet Explorer) are not supported due to the lack of ES6+ and Import Map support.*
+  * Google Chrome
+  * Microsoft Edge
+  * Mozilla Firefox
+  * Safari
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
