@@ -8,6 +8,10 @@
 
 Os-WEBP Converter is a lightweight, privacy-focused web application designed to convert WEBP images into universally supported formats (PNG, JPG) directly in the browser. Built with a stunning neumorphic (soft UI) design, it offers a tactile user experience without relying on external servers or complex build processes.
 
+<img width="751" height="663" alt="Screenshot 2025-11-23 153359" src="https://github.com/user-attachments/assets/0870dd5c-dadd-4f62-8463-68077115dce5" />
+
+
+
 ## Key Features
 
 ### Format Conversion
