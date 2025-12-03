@@ -1,5 +1,6 @@
 {
   "name": "os-webp-converter",
+  "homepage": "https://YOUR_USERNAME.github.io/os-webp-converter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
