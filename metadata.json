@@ -1,0 +1,5 @@
+{
+  "name": "Os-WEBP Converter",
+  "description": "A monochromatic grayscale neumorphic app to convert WEBP images to PNG/JPG and perform simple upscaling.",
+  "requestFramePermissions": []
+}
